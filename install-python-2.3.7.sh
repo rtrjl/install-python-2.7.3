@@ -1,4 +1,4 @@
-currentdir=pwd
+#!/bin/bash
 cd ~
 mkdir ~/src
 cd ~/src
@@ -14,7 +14,6 @@ wget http://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.9.tar.gz
 tar -zxvf virtualenv-1.9.tar.gz
 cd virtualenv-1.9/
 ~/.localpython-2.3.7/bin/python setup.py install
-cd $currentdir
 ~/.localpython-2.3.7/bin/virtualenv venv-2.7.3 -p ~/.localpython-2.3.7/bin/python2.7
-. ~/venv-2.7.3/bin/activate
+. /venv-2.7.3/bin/activate
 curl http://python-distribute.org/distribute_setup.py | python
