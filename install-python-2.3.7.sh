@@ -16,4 +16,5 @@ cd virtualenv-1.9/
 ~/.localpython-2.3.7/bin/python setup.py install
 ~/.localpython-2.3.7/bin/virtualenv venv-2.7.3 -p ~/.localpython-2.3.7/bin/python2.7
 . /venv-2.7.3/bin/activate
-curl http://python-distribute.org/distribute_setup.py | python
+easy_install -U distribute:
+#curl http://python-distribute.org/distribute_setup.py | python
